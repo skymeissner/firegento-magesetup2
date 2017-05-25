@@ -81,6 +81,14 @@ class Details extends \Magento\Framework\View\Element\Template
         $this->saleableItem = $saleableItem;
         $this->unsetData('tax_rate');
     }
+    
+    /**
+     * @return \Magento\Framework\Pricing\SaleableInterface $saleableItem
+     */
+    public function getSaleableItem()
+    {
+        return $this->saleableItem;
+    }
 
     /**
      * @return string
